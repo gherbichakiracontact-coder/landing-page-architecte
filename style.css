@@ -1,7 +1,20 @@
-body {
-    font-family:  Arial, Helvetica, sans-serif;
-    width: 100vw;
+body, html {
+    margin: 0;
+    padding: 0;
     height: 100vh;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h1, h2, h3, h4{
+    font-family: "Cormorant Garamond", serif;
+}
+
+p {
+    font-family: "Manrope", sans-serif;
+    font-size: 17px;
 }
 
 #section-containers {
@@ -31,6 +44,8 @@ nav img{
 nav li a{
     color: black;
     text-decoration: none;
+    font-family: "Manrope", sans-serif;
+    font-size: 25px;
 }
 
 .menu {
@@ -39,52 +54,380 @@ nav li a{
     gap: 50px;
 }
 
+
 .noir {
     text-decoration: none;
     background-color: black;
-    width: 100px;
     color: white;
-    padding: 13px 20px;
+    margin-right: 100px;
+    padding: 20px 30px;
+    font-size: 25px;
+    transition: all 0.3s ease-in-out;
 }
 
 #hero-header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 300px;
+    gap: 50px;
+    background-color: rgb(207, 202, 202);
+
 }
 
 .riviere {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 10px;
-    width: 50%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.primary {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 20px 30px;
+    font-size: 25px;
+}
+
+.secondary {
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    padding: 20px 30px;
+    font-size: 25px;
 }
 
 .maquette img {
-    width: 100%;
-    height: 50vh;
     display: flex;
-    
+    height: 100%;
+    width: 100%;   
 }
 
-#promesse img {
-    width: 30%;
+#promesse-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 
+.promesse-button {
+    padding-left: 40px;
+}
+.promesse-content {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.promesse-img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.promesse-img {
+    width: 600px;
+    height: 600px;
+    display: block;
+    object-fit: cover;
+}
+
+.promesse-list li {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.promesse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.sub-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.promesse-list li {
+    padding: 0;
+    margin-bottom: 80px;
+    list-style-type: none;
+}
+
+.promesse-list li::before {
+  content: "✓";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 25px;
 }
 
 
-#service img {
-    width: 30%;
+#service-container {
+  display: flex;
+  gap: 100px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(207, 202, 202);
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+ 
+.service-content {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+ 
+.service-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.img-container {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    align-items: center;
 }
 
 .modele img {
-    width: 30%;
-
+  width: 30%;
 }
 
-.reseaux img {
+#service-container article {
     display: flex;
-    width: 70px;
-    height: 10wh;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
 }
+
+.btn { 
+     text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 20px 30px;
+    margin-right: 100px;
+    font-size: 25px;
+    margin: auto;
+}
+
+.service-button {
+    display: flex;
+}
+
+.sub-service {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.text-service {
+    font-size: 35px;
+    line-height: 1.5;
+    max-width: 400px;
+    text-align: center;
+    margin: auto;
+}
+
+#service-container p {
+    display: flex;
+    flex-direction: column;
+}
+
+#realisation h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.modele {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+}
+
+.projet-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.projet-img {
+    width: 800px;
+    height: 600px;
+    margin-bottom: 150px;
+    margin-top: 150px;
+    border-radius: 10px;
+    overflow: hidden ;
+}
+
+.projet-texte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.modele-reverse {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    background-color: rgb(207, 202, 202);
+}
+
+#avis-container {
+    margin-bottom: 200px;
+}
+#avis-container h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 150px;
+    padding-top: 150px;
+}
+
+.avis-content article {
+    background-color: rgb(207, 202, 202);
+    margin: 2%;
+    padding: 20px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.avis-content {
+    display: flex;
+}
+
+.avis-profil img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avis-profil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.name, .category {
+    display: block;
+    width: auto;
+    height: auto;   
+}
+
+.avis-text {
+    display: flex;
+    flex-direction: column;
+}
+
+#avis-container p, h4 {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+#avis-container h5 {
+    font-size: 14px;
+    color: grey;
+}
+
+.avis-text p,
+.avis-text h3,
+.avis-text h4,
+.avis-text h5 {
+  margin: 0;
+  line-height: 0,25;
+}
+
+#footer-container {
+    padding-bottom: 150px;
+    display: flex;
+    padding-top: 200px;
+    justify-content: center;
+    background-color: rgb(207, 202, 202);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#footer-container p {
+    font-size: 20px;
+}
+
+.reseaux {
+    display: flex;
+}
+.reseaux img { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.reseaux a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+}
+
+.behance {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.footer-formulaire {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 300px;
+}
+
+.footer-formulaire input {
+    margin: 10px;
+    padding-right: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    font-size: 20px;
+    border: none;
+}
+

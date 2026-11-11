@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
+
 <body>
     
     <header>
@@ -14,14 +21,14 @@
                 <img src="images/logo.png" alt="Logo Clémence Rivière Studio">
             </a>
             <div class="menu">
-            <ul>
-                <li><a href="#">Lien 1</a></li>
-                <li><a href="#">Lien 2</a></li>
-                <li><a href="#">Lien 3</a></li>
+                <ul>
+                    <li><a href="#">Lien 1</a></li>
+                    <li><a href="#">Lien 2</a></li>
+                    <li><a href="#">Lien 3</a></li>
                 </ul>
 
-                <div><a href="#">
-                <button class="noir">Contact</button></a>
+                <div>
+                    <a href="#" class="noir">Contact</a>
                 </div>
            
             </div>
@@ -36,68 +43,105 @@
                     <div class="riviere">
                         <h1>Clémence Rivière Studio</h1>
                         <p>Révéler le potentiel de chaque espace</p>
-                        <button class="primary">Prendre rendez-vous</button>
-                        <button class="secondary">Voir mes Réalisations</button>
+
+                        <div class="hero-buttons">
+                            <button class="primary">Prendre rendez-vous</button>
+                            <button class="secondary">Voir mes Réalisations</button>
+                        </div>
                     </div>
 
                     <div class="maquette">
                         <img src="https://www.maisondarchitecte.org/api/assets/1792364346003-downloaded.webp" alt="Maison d'architecte">
                     </div>
+
                 </section>
 
-                <section id="promesse">
-                    <h2>Promesses Clients</h2>
-                    <p>Une approche centrée sur vos besoins et votre bien-être</p>
+                <section id="promesse-container">
 
-                    <div>
-                        <img src="images/promesses-pexels-shkrabaanthony-6322392.jpg" alt="">
+                    <div class="promesse">
+                        <h2>Promesses Clients</h2>
+                        <p>Une approche centrée sur vos besoins et votre bien-être</p>
                     </div>
 
-                    <div>
-                        <ul>
-                            <li>Une approche humaine et créative, centrée sur vos usages et vos envies</li>
-                            <li>Des matériaux durables et des fournisseurs locaux privilégiés</li>
-                            <li>Une expertise esthétique alliée à une rigueur technique</li>
-                            <li>Un accompagnement complet, du croquis à la réception du chantier</li>
-                        </ul>
-                        <a href>
-                            <button class="noir">Appel à l'action</button>
-                        </a>
-                    </div>
+                    <div class="promesse-content">
+
+                        <div class="promesse-img">
+                            <img src="images/promesses-pexels-shkrabaanthony-6322392.jpg" alt="Promesse Clients">
+                        </div>
+                
+                        
+                        <div class="sub-container">
+                            <div class="promesse-list">
+                                <ul>
+                                    <li>Une approche humaine et créative, centrée sur vos usages et vos envies</li>
+                                    <li>Des matériaux durables et des fournisseurs locaux privilégiés</li>
+                                    <li>Une expertise esthétique alliée à une rigueur technique</li>
+                                    <li>Un accompagnement complet, du croquis à la réception du chantier</li>
+                                </ul>
+                            </div>
+            
+                            <div class="promesse-button">
+                                <a href="">
+                                    <button class="noir">Appel à l'action</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>         
                 </section>
 
-                <section id="service">
+                <section id="service-container">
                     <h2>Nos prestations</h2>
         
-                    <div>
+                    <div class="service-content">
                         <article>
-                            <img src="images/renovation-pexels-scene-design-144978225-14615702.jpg" alt="Rénovation pexels">
-                            <h4>Rénovation d'appartements</h4>
-                            <p>Repenser la circulation, les volumes et la lumière pour créer des intérieurs élégants, 
-                               fonctionnels et chaleureux.</p>
-                            <a href="#">
-                                <button>Voir plus</button>
-                            </a>
+                            <div class="img-container">
+                                <img src="images/renovation-pexels-scene-design-144978225-14615702.jpg" alt="Rénovation pexels">
+                            </div>
+                            <div class="sub-service">
+                                <div class="text-service">
+                                    <h4>Rénovation d'appartements</h4>
+                                    <p>Repenser la circulation, les volumes et la lumière pour créer des intérieurs élégants, 
+                                    fonctionnels et chaleureux.
+                                    </p>
+                                </div>
+                                <div  class="service-button">
+                                        <a href="#" class="btn">Voir plus</a>
+                                </div>
+                            </div>        
                         </article>
 
                         <article>
+                            <div class="img-container">
                             <img src="images/amenagement-pexels-shkrabaanthony-5292237.jpg" alt="Aménagement pexels">
-                            <h4>Aménagement sur mesure</h4>
-                            <p>Conception de mobilier intégré et d'espaces adaptés à vos besoins : 
-                               bibliothèques, rangements, cuisines, bureaux...</p>
-                            <a href="#">
-                                <button>Voir plus</button>
-                            </a>
+                            </div>
+                            <div class="sub-service">
+                                <div class="text-service">
+                                    <h4>Aménagement sur mesure</h4>
+                                    <p>Conception de mobilier intégré et d'espaces adaptés à vos besoins : 
+                                    bibliothèques, rangements, cuisines, bureaux...
+                                    </p>
+                                </div>
+                                <div  class="service-button">
+                                    <a href="#" class="btn">Voir plus</a>
+                                </div>
+                            </div>
                         </article>
 
                         <article>
+                            <div class="img-container">
                             <img src="images/decoration-interieur-pexels-cottonbro-6583355.jpg" alt="Decoration intérieur">
-                            <h4>Décoration intérieure</h4>
-                            <p>Sélection de matériaux, textures et couleurs pour harmoniser votre intérieur 
-                               et lui donner une identité unique.</p>
-                            <a href="#">
-                                <button>Voir plus</button>
-                            </a>
+                            </div>
+                            <div class="sub-service">
+                                <div class="text-service">
+                                    <h4>Décoration intérieure</h4>
+                                    <p>Sélection de matériaux, textures et couleurs pour harmoniser votre intérieur 
+                                    et lui donner une identité unique.
+                                    </p>
+                                </div>
+                                <div class="service-button">
+                                        <a href="" class="btn">Voir plus</a>
+                                </div>
+                            </div>
                         </article>
                     </div>
                 </section>
@@ -106,129 +150,173 @@
                     <h2>Projets</h2>
                     
                     <div class="modele">
-                        <img src="images/im3rd-media-FJZtZldA-uE-unsplash.jpg" alt="Cuisine contemporaine contrasée">
-                       <h3>Appartement Haussmannien – Lyon 6e</h3>
-                       <p>Rénovation complète d’un appartement de 120 m² : 
-                        ouverture des espaces, mise en valeur des moulures et création d’une cuisine contemporaine contrastée.</p> 
+                        <div class="projet-img">
+                            <img src="images/im3rd-media-FJZtZldA-uE-unsplash.jpg" alt="Cuisine contemporaine contrasée">
+                        </div>
+                        <div class="projet-texte">
+                            <h3>Appartement Haussmannien – Lyon 6e</h3>
+                            <p>Rénovation complète d’un appartement de 120 m² : 
+                                ouverture des espaces, mise en valeur des moulures et création d’une cuisine contemporaine contrastée.
+                            </p> 
+                        </div>
                     </div>
-                </section>
+                
 
-                 <section id="">
+                    <div class="modele-reverse">
+                        <div class="projet-texte">
+                            <h3>Maison contemporaine – Annecy</h3>
+                            <p>Aménagement intérieur complet :
+                                création d’un grand espace de vie traversant, matériaux naturels et mobilier sur mesure en bois clair.
+                            </p> 
+                        </div>
+                        <div class="projet-img">
+                            <img src="images/jean-luc-benazet-oOvzE2L-n1A-unsplash.jpg" alt="Grand espace de vie">
+                        </div>
+                    </div>
 
                     <div class="modele">
-                       <img src="images/jean-luc-benazet-oOvzE2L-n1A-unsplash.jpg" alt="Grand espace de vie">
-                       <h3>Maison contemporaine – Annecy</h3>
-                       <p>Aménagement intérieur complet :
-                     création d’un grand espace de vie traversant, matériaux naturels et mobilier sur mesure en bois clair.</p> 
+                        <div class="projet-img">
+                            <img src="images/hakim-menikh-lcoAS3tYlx4-unsplash.jpg" alt="Petit espace de 25 m²">
+                        </div>
+                        <div class="projet-texte">
+                            <h3>Studio étudiant – Villeurbanne</h3>
+                            <p>Optimisation d’un petit espace de 25 m² avec mobilier modulable et ambiance minimaliste chaleureuse.
+                            </p> 
+                        </div>
                     </div>
 
+                     <div class="modele-reverse">
+                        <div class="projet-texte">
+                            <h3>Boutique artisanale – Croix-Rousse</h3>
+                            <p>Projet: Transformation d’un ancien atelier en boutique lumineuse :
+                               jeu de textures entre béton ciré, bois brut et verrières d’atelier.
+                            </p> 
+                        </div>
+                        <div class="projet-img">
+                            <img src="images/tem-rysh-F6-U5fGAOik-unsplash.jpg" alt="Ancien atelier en boutique lumineuse">
+                        </div>
                 </section>
 
-                 <section id="">
-
-                    <div class="modele">
-                       <img src="images/hakim-menikh-lcoAS3tYlx4-unsplash.jpg" alt="Petit espace de 25 m²">
-                       <h3>Studio étudiant – Villeurbanne</h3>
-                       <p>Optimisation d’un petit espace de 25 m² avec mobilier modulable et ambiance minimaliste chaleureuse.</p> 
-                    </div>
-
-                </section>
-
-                 <section id="">
-
-                    <div class="modele">
-                       <img src="images/tem-rysh-F6-U5fGAOik-unsplash.jpg" alt="Ancien atelier en boutique lumineuse">
-                       <h3>Boutique artisanale – Croix-Rousse</h3>
-                       <p>Projet: Transformation d’un ancien atelier en boutique lumineuse :
-                    jeu de textures entre béton ciré, bois brut et verrières d’atelier.</p> 
-                    </div>
-
-                </section>
-
-                <section id="">
+            <section id="avis-container">
                     <h2>Temoignages</h2>
 
-                    <div>
-
-                        <article>
+                <div class="avis-content">
+                    <article>
+                        <div class="temoignages">
                             <p>Type Mission: Rénovation d'appartement</p> 
                             <p>Clémence a su repenser notre espace avec beaucoup d’intelligence et de goût.
                                Le résultat est à la fois pratique et sublime.</p>
-                            <div>
+                        </div>
+                        <div class="avis-profil">
+                            <div class="avis-img">
                                 <img src="https://tse4.mm.bing.net/th/id/OIP.B6lHBLeVcbw0UTZJq3iITgHaHW?r=0&pid=Api&h=220&P=0" alt="Photo de profil de Mathilde">
-                                <h4>Mathilde</h4>
-                                <h5></h5>
                             </div>
-                        </article>
+                            <div class="avis-text">
+                                <div class="name">
+                                    <h4>Mathilde</h4>
+                                </div>
+                                <div class="category">
+                                    <h5>Customer</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
 
-                         <article>
+                    <article>
+                        <div class="temoignages">
                             <p>Type Mission: Aménagement de bureau</p> 
-                            <p>Un vrai sens du détail et une belle écoute de nos besoins. 
+                            <p>
+                                Un vrai sens du détail et une belle écoute de nos besoins. 
                               Les meubles sur mesure sont parfaits et l’espace respire.</p>
-                            <div>
+                        </div>
+                        <div class="avis-profil">
+                            <div class="avis-img">
                                 <img src="https://tse4.mm.bing.net/th/id/OIP.4Q4GTcFh6vL4b3o8em3yugAAAA?r=0&pid=Api&h=220&P=0" alt="Photo de profil de Olivier">
-                                <h4>Olivier</h4>
-                                <h5>Customer</h5>
                             </div>
-                        </article>
+                            <div class="avis-text">
+                                <div class="name">
+                                    <h4>Olivier</h4>
+                                </div>
+                                <div class="category">
+                                    <h5>Customer</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
 
-                        <article>
+                    <article>
+                        <div class="temoignages">
                             <p>Type Mission: Décoration intérieure</p> 
                             <p>J’adore la nouvelle ambiance de mon salon : 
                             couleurs apaisantes, lumière retravaillée, et des matières nobles. Je recommande à 100 %.</p>
-                            <div>
+                        </div>
+                        <div class="avis-profil">
+                            <div class="avis-img">
                                 <img src="https://tse1.mm.bing.net/th/id/OIP.zUBfoEBmay3MtV65dAOaNwHaEQ?r=0&pid=Api&h=220&P=0" alt="Photo de profil de Sonia">
-                                <h4>Sonia</h4>
-                                <h5>Customer</h5>
                             </div>
-                        </article>
-
-                    </div>
-
-                </section>
+                            <div class="avis-text">
+                                <div class="name">
+                                    <h4>Sonia</h4>
+                                </div>
+                                <div class="category">
+                                <h5>Customer</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
             </section>
         </main>
 
         <footer>
 
-            <div>
-                <h2>Prêts à travailler ensemble ?</h2>
-                <p>Une idée, un projet, une envie de collaboration ?
-                 Contactez-nous, nous serons ravis d’en discuter et de voir
-                 comment avancer ensemble.
-                 Laissez votre contact téléphonique et je vous rappellerai.</p>
+            <div id="footer-container">
+                <div class="footer-content">
+                    <div class="footer-text">
+                        <h2>Prêts à travailler ensemble ?</h2>
+                        <p>
+                            Une idée, un projet, une envie de collaboration ?</br>
+                            Contactez-nous, nous serons ravis d’en discuter et de voir</br>
+                            comment avancer ensemble.</br>
+                            Laissez votre contact téléphonique et je vous rappellerai
+                        </p>
+                    </div>
 
-                 <div class="reseaux">
-                <a href="#">
-                    <img src="https://tse3.mm.bing.net/th/id/OIP._51t0MO849iCXhaHRoeK7wHaHa?r=0&pid=Api&h=220&P=0" alt="logo discord">
-                </a>
-                <a href="#">
-                    <img src="https://tse2.mm.bing.net/th/id/OIP.55DCXbXlKDgEBoZhKxpzLAHaHa?r=0&pid=Api&h=220&P=0" alt="logo facebook">
-                </a>
-                <a href="#">
-                    <img src="https://tse4.mm.bing.net/th/id/OIP.33qGZoZY627PcKigFMGO4wHaHa?r=0&pid=Api&h=220&P=0" alt="logo dribbble">
-                </a>
-                <a href="#">
-                    <img src="https://tse4.mm.bing.net/th/id/OIP.sgvdhnGTJIyQt0-qHS4DuQHaHa?r=0&pid=Api&h=220&P=0" alt="logo instagram">
-                </a>
-                <a href="#">
-                    <img src="https://tse1.mm.bing.net/th/id/OIP.TORd20o2Fiq-7ylCz4lQjgHaEv?r=0&pid=Api&h=220&P=0" alt="logo Behance">
-                </a>
+                    <div class="reseaux">
+                        <a href="#">
+                            <img src="https://static.vecteezy.com/system/resources/thumbnails/023/986/612/small/discord-logo-discord-logo-transparent-discord-icon-transparent-free-free-png.png" alt="logo discord">
+                        </a>
+                        <a href="#">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png?utm_source=fr.wikipedia.org&utm_campaign=index&utm_content=original" alt="logo facebook">
+                        </a>
+                        <a href="#">
+                            <img src="https://cdn-icons-png.flaticon.com/512/87/87400.png" alt="logo dribbble">
+                        </a>
+                        <a href="#">
+                            <img src="https://pluspng.com/img-png/instagram-hd-png-instagram-logo-1000.png" alt="logo instagram">
+                        </a>
+                        <a href="#" class="behance">
+                            <img src="https://cdn-icons-png.flaticon.com/256/51/51916.png" alt="logo Behance">
+                        </a>
+                    </div>
+                </div>
+                
+                
+                <div class="footer-formulaire">
+                    <input type="text" id="name" placeholder="Nom" required>
+
+                    <input type="tel" id="phone"  placeholder="Téléphone">
+
+                    <input type="email" id="mail" placeholder="E-mail" required>
+
+                    <input type="message" id="sms" placeholder="Message">
+
+                    <button class="noir">Envoyer</button>
                 </div>
             </div>
-                
-                
-            <div>
-                <input type="text" id="name" placeholder="Nom" required>
 
-                <input type="tel" id="phone"  placeholder="Téléphone">
-
-                <input type="email" id="mail" placeholder="email" required>
-
-                <input type="message" id="sms" placeholder="message">
-                    <button class="send">Envoyer</button>
-            </div>
         </footer>
 
 
