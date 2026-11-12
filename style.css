@@ -271,7 +271,7 @@ h2 {
 
 .modele {
     display: flex;
-    gap: 10px;
+    gap: 100px;
     justify-content: center;
 }
 
@@ -300,9 +300,13 @@ h2 {
 
 .modele-reverse {
     display: flex;
-    gap: 10px;
+    gap: 100px;
     justify-content: center;
     background-color: rgb(207, 202, 202);
+}
+
+#realisation h3 {
+    font-size: 2em;
 }
 
 #avis-container {
