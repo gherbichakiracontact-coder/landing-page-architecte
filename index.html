@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Clémence Rivière Studio</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -92,7 +94,7 @@
                 <section id="service-container">
                     <h2>Nos prestations</h2>
         
-                    <div class="service-content">
+                    <div class="service-content" data-aos="flip-down">
                         <article>
                             <div class="img-container">
                                 <img src="images/renovation-pexels-scene-design-144978225-14615702.jpg" alt="Rénovation pexels">
@@ -150,7 +152,7 @@
                     <h2>Projets</h2>
                     
                     <div class="modele">
-                        <div class="projet-img">
+                        <div class="projet-img" data-aos="fade-right">
                             <img src="images/im3rd-media-FJZtZldA-uE-unsplash.jpg" alt="Cuisine contemporaine contrasée">
                         </div>
                         <div class="projet-texte">
@@ -169,13 +171,13 @@
                                 création</br> d’un grand espace de vie traversant,</br>matériaux naturels et mobilier</br> sur mesure en bois clair.
                             </p> 
                         </div>
-                        <div class="projet-img">
+                        <div class="projet-img" data-aos="fade-left">
                             <img src="images/jean-luc-benazet-oOvzE2L-n1A-unsplash.jpg" alt="Grand espace de vie">
                         </div>
                     </div>
 
                     <div class="modele">
-                        <div class="projet-img">
+                        <div class="projet-img" data-aos="fade-right">
                             <img src="images/hakim-menikh-lcoAS3tYlx4-unsplash.jpg" alt="Petit espace de 25 m²">
                         </div>
                         <div class="projet-texte">
@@ -192,7 +194,7 @@
                                jeu de</br> textures entre béton ciré,bois brut et verrières d’atelier.
                             </p> 
                         </div>
-                        <div class="projet-img">
+                        <div class="projet-img" data-aos="fade-left">
                             <img src="images/tem-rysh-F6-U5fGAOik-unsplash.jpg" alt="Ancien atelier en boutique lumineuse">
                         </div>
                 </section>
@@ -202,7 +204,7 @@
 
                 <div class="avis-content">
                     <article>
-                        <div class="temoignages">
+                        <div class="temoignages" data-aos="fade-up" data-aos-anchor-placement="bottom-center">
                             <p>Type Mission: Rénovation d'appartement</p> 
                             <p>Clémence a su repenser notre espace avec beaucoup d’intelligence et de goût.
                                Le résultat est à la fois pratique et sublime.</p>
@@ -223,7 +225,7 @@
                     </article>
 
                     <article>
-                        <div class="temoignages">
+                        <div class="temoignages" data-aos="fade-up" data-aos-anchor-placement="bottom-center">
                             <p>Type Mission: Aménagement de bureau</p> 
                             <p>
                                 Un vrai sens du détail et une belle écoute de nos besoins. 
@@ -245,7 +247,7 @@
                     </article>
 
                     <article>
-                        <div class="temoignages">
+                        <div class="temoignages" >
                             <p>Type Mission: Décoration intérieure</p> 
                             <p>J’adore la nouvelle ambiance de mon salon : 
                             couleurs apaisantes, lumière retravaillée, et des matières nobles. Je recommande à 100 %.</p>
@@ -320,6 +322,12 @@
         </footer>
 
 
+    <script 
+        src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
