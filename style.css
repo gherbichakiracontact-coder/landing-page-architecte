@@ -1,27 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
 body, html {
     margin: 0;
     padding: 0;
+    width: 100vw;
     height: 100vh;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 2.5em;
 }
 
 h1, h2, h3, h4{
     font-family: "Cormorant Garamond", serif;
 }
 
-p {
+p, a {
     font-family: "Manrope", sans-serif;
-    font-size: 17px;
+    font-size: 1em;
 }
 
 #section-containers {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    /* gap: 32px; */
 }
 
 nav{
@@ -45,7 +50,6 @@ nav li a{
     color: black;
     text-decoration: none;
     font-family: "Manrope", sans-serif;
-    font-size: 25px;
 }
 
 .menu {
@@ -61,7 +65,7 @@ nav li a{
     color: white;
     margin-right: 100px;
     padding: 20px 30px;
-    font-size: 25px;
+    font-size: 1em;
     transition: all 0.3s ease-in-out;
 }
 
@@ -69,7 +73,6 @@ nav li a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 300px;
     gap: 50px;
     background-color: rgb(207, 202, 202);
 
@@ -80,8 +83,9 @@ nav li a{
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-    margin-left: 100px;
-    margin-right: 100px;
+    /* margin-left: 100px;
+    margin-right: 100px; */
+    padding: 10vh 17vh;
 }
 
 .hero-buttons {
@@ -94,7 +98,7 @@ nav li a{
     background-color: black;
     color: white;
     padding: 20px 30px;
-    font-size: 25px;
+    font-size: 1em;
 }
 
 .secondary {
@@ -103,7 +107,7 @@ nav li a{
     color: black;
     border: 2px solid black;
     padding: 20px 30px;
-    font-size: 25px;
+    font-size: 1em;
 }
 
 .maquette img {
@@ -116,8 +120,8 @@ nav li a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 10vh;
+    padding-bottom: 10vw;
 }
 
 .promesse-button {
@@ -131,25 +135,24 @@ nav li a{
 
 .promesse-img img{
     width: 100%;
-    height: 100%;
     display: block;
     object-fit: cover;
 }
 
 .promesse-img {
-    width: 600px;
-    height: 600px;
+    width: 50vh;
+    /* height: 600px; */
     display: block;
     object-fit: cover;
 }
 
 .promesse-list li {
-    font-size: 30px;
+    font-size: 1em;
     margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
@@ -184,13 +187,13 @@ h2 {
 
 #service-container {
   display: flex;
-  gap: 100px;
+  gap: 10px;
   width: 100%;
   flex-direction: column;
   align-items: center;
   background-color: rgb(207, 202, 202);
-  padding-top: 100px;
-  padding-bottom: 150px;
+  padding-top: 10vh;
+  padding-bottom: 10vw;
 }
  
 .service-content {
@@ -198,7 +201,7 @@ h2 {
   padding-right: 10%;
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: 50px;
 }
  
 .service-content img {
@@ -208,10 +211,9 @@ h2 {
 }
 
 .img-container {
-    width: 500px;
-    height: 400px;
     display: flex;
     align-items: center;
+    height: 100%;
 }
 
 .modele img {
@@ -225,6 +227,7 @@ h2 {
     padding-bottom: 20px;
     border-radius: 15px;
     overflow: hidden;
+    width: 45%;
 }
 
 .btn { 
@@ -233,7 +236,7 @@ h2 {
     color: white;
     padding: 20px 30px;
     margin-right: 100px;
-    font-size: 25px;
+    font-size: 1em;
     margin: auto;
 }
 
@@ -248,7 +251,7 @@ h2 {
 }
 
 .text-service {
-    font-size: 35px;
+    font-size: 1em;
     line-height: 1.5;
     max-width: 400px;
     text-align: center;
@@ -267,7 +270,7 @@ h2 {
 
 .modele {
     display: flex;
-    gap: 70px;
+    gap: 10px;
     justify-content: center;
 }
 
@@ -277,24 +280,26 @@ h2 {
 }
 
 .projet-img {
-    width: 800px;
-    height: 600px;
-    margin-bottom: 150px;
-    margin-top: 150px;
+    width: 40vw;
+    height: 55vh;
+    /* padding-top: 10vh; */
+    /* padding-bottom: 10vw; */
+    margin-top: 110px;
     border-radius: 10px;
-    overflow: hidden ;
+    overflow: hidden;
+    margin-bottom: 100px;
 }
 
 .projet-texte {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 40px;
+    font-size: 1em;
 }
 
 .modele-reverse {
     display: flex;
-    gap: 70px;
+    gap: 10px;
     justify-content: center;
     background-color: rgb(207, 202, 202);
 }
@@ -305,8 +310,8 @@ h2 {
 #avis-container h2 {
     display: flex;
     justify-content: center;
-    padding-bottom: 150px;
-    padding-top: 150px;
+    padding-top: 10vh;
+    padding-bottom: 10vw;
 }
 
 .avis-content article {
@@ -346,13 +351,13 @@ h2 {
 }
 
 #avis-container p, h4 {
-    font-size: 24px;
+    font-size: 1em;
     display: flex;
     justify-content: center;
 }
 
 #avis-container h5 {
-    font-size: 14px;
+    font-size: 0.80em;
     color: grey;
 }
 
@@ -367,16 +372,18 @@ h2 {
 #footer-container {
     padding-bottom: 150px;
     display: flex;
-    padding-top: 200px;
+    padding-top: 10vh;
+    padding-bottom: 10vw;
     justify-content: center;
     background-color: rgb(207, 202, 202);
+    gap: 100px;
 }
 
 .footer-content {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 60px;
+    gap: 10px;
 }
 
 .footer-text {
@@ -386,7 +393,7 @@ h2 {
 }
 
 #footer-container p {
-    font-size: 20px;
+    font-size: 1em;
 }
 
 .reseaux {
@@ -417,17 +424,16 @@ h2 {
     flex-direction: column;
     align-items: baseline;
     justify-content: center;
-    gap: 30px;
-    margin-left: 300px;
+    margin-left: 10px;
 }
 
 .footer-formulaire input {
     margin: 10px;
-    padding-right: 300px;
+    padding-right: 20vh;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 30px;
-    font-size: 20px;
+    font-size: 0.80em;
     border: none;
 }
 
